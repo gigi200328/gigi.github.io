@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+	    <title>Coffee Offering</title>
+		 <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.slim.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+		
+	</head>
+    <body class="bi">
+	    <nav class="navbar navbar-expand-sm bg-dark navbar-dark fixed-top">
+		<a class="navbar-brand" href="Bs.html">
+		    <img src="picture/images/image5.jpg" alt="logo" width="40">
+		</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+             <span class="navbar-toggler-icon"></span>
+        </button>
+	    <div class="collapse navbar-collapse" id="collapsibleNavbar">
+		    <ul class="navbar-nav">
+		        <li class="nav-item">
+				    <a href="Bs1.html" class="nav-link">Home</a>
+				</li>
+				<li class="nav-item">
+				    <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+                    Menu
+                    </a>
+					<div class="dropdown-menu">
+					    <a class="dropdown-item" href= coffeemachine.html>
+						Coffee Machine
+						</a>
+						<a class="dropdown-item" href= coffeeproduct.html>
+						Coffee Product
+						</a>
+						<a class="dropdown-item" href= coffeequality.html>
+						Coffee Quality
+						</a>
+					</div>
+				</li>
+				 <li class="nav-item">
+				    <a href="about.html" class="nav-link">Events</a>
+				</li>
+				 <li class="nav-item">
+				    <a href="contact.html" class="nav-link">Contacts</a>
+				</li>
+				 <li class="nav-item">
+				    <a href="coffeeoffering.html" class="nav-link">Coffee Offering</a>
+				</li>
+			</ul>
+			<!-- Cart Icon -->
+			<ul class="navbar-nav ml-auto">
+				<li class="nav-item">
+					<a class="nav-link cart" href="#" data-toggle="modal" data-target="#cartModal">
+						<i class="fa fa-shopping-cart"></i>
+						<span class="badge badge-pill badge-danger" id="cart-count">0</span>
+					</a>
+				</li>
+			</ul>
+		</div>
+        </nav>
+		<br>
+		<br>
+		<br>
+		<br>
+		<h1>Coffee Experience with Special Discount!!!</h1>
+        <h6> Join me for a delightful coffee experience, where we'll explore a variety of brews 
+		   from bold espressos to smooth lettes andspecialty blends.<br>
+		   Get an exclusive 30% discount on your favorite coffee blends and accessories during the event!!!
+		</h6>
+		<br>
+	<div class="container">
+		    <div class="row">
+			    <div class="col-sm-3">
+				    <div class="card bg-secondary text-white">
+					    <img src="Picture/img25.jpg" alt="coffee 1" class="card-img-top" style="width:100%;">
+						<div class="card-body"> 
+						    <h4 class="card-title ">Coffee Latte</h4>
+							<p class="card-text">
+							4.73$
+							</p>
+							<br>
+							<button class="btn btn-primary add-to-cart">Add to Cart</button>
+						</div>
+				    </div>
+				</div>
+				<div class="col-sm-3">
+				    <div class="card bg-secondary text-white">
+					    <img src="Picture/img26.jpg" alt="coffee 1" class="card-img-top" style="width:100%;">
+						<div class="card-body"> 
+						    <h4 class="card-title">Coffee Bean </h4>
+							<p class="card-text">
+							3.44$
+							</P>
+							<br>
+							<button class="btn btn-primary add-to-cart">Add to Cart</button>
+						</div>
+				    </div>
+				</div>
+				<div class="col-sm-3">
+				    <div class="card bg-secondary text-white">
+					    <img src="Picture/img29.jpg" alt="coffee 1" class="card-img-top" style="width:100%;">
+						<div class="card-body"> 
+						    <h4 class="card-title">Cappuccino
+							</h4>
+							<p class="card-text">
+							5.4$
+							</P>
+							<br>
+							<button class="btn btn-primary add-to-cart">Add to Cart</button>
+						</div>
+				    </div>
+				</div>
+				<div class="col-sm-3">
+				    <div class="card bg-secondary text-white">
+					    <img src="Picture/img28.jpg" alt="coffee 1" class="card-img-top" style="width:100%;">
+						<div class ="card-body">
+						    <h4 
+							class="card-title">Espresso</h4>
+							<p class="card-text">
+							4.2$
+							</P>
+							<br>
+							<button class="btn btn-primary add-to-cart">Add to Cart</button>
+						</div>
+				    </div>
+				</div>
+			</div>
+    </div>
+	<br>
+	<br>
+	<br>
+		<!-- Cart Modal -->
+		<div class="modal fade" id="cartModal" tabindex="-1" role="dialog" aria-labelledby="cartModalLabel" aria-hidden="true">
+			<div class="modal-dialog" role="document">
+				<div class="modal-content">
+					<div class="modal-header">
+						<h5 class="modal-title" id="cartModalLabel">Shopping Cart</h5>
+						<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+							<span aria-hidden="true">&times;</span>
+						</button>
+					</div>
+					<div class="modal-body">
+						<ul id="cart-items" class="list-group">
+						<!-- Cart items will be dynamically added here -->
+						</ul>
+						<p class="text-right mt-2">Total: $<span id="cart-total">0</span></p>
+					</div>
+					<div class="modal-footer">
+						<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+						<button type="button" class="btn btn-primary">Checkout</button>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<!--footer-->
+		<footer class="bg-white">
+    <div class="container py-5">
+		<div class="row py-4">
+        <div class="col-lg-2 col-md-6 mb-4 mb-lg-0">
+		<img src="https://i.pinimg.com/originals/33/b8/69/33b869f90619e81763dbf1fccc896d8d.jpg" alt="" width="180" class="mb-3">
+          <p class="font-italic text-muted">coffee is ;;;;.</p>
+          <ul class="list-inline mt-4">
+            <li class="list-inline-item"><a href="#" target="_blank" title="twitter"><i class="fa fa-twitter"></i></a></li>
+            <li class="list-inline-item"><a href="#" target="_blank" title="facebook"><i class="fa fa-facebook"></i></a></li>
+            <li class="list-inline-item"><a href="#" target="_blank" title="instagram"><i class="fa fa-instagram"></i></a></li>
+            <li class="list-inline-item"><a href="#" target="_blank" title="pinterest"><i class="fa fa-pinterest"></i></a></li>
+            <li class="list-inline-item"><a href="#" target="_blank" title="vimeo"><i class="fa fa-vimeo"></i></a></li>
+          </ul>
+        </div>
+        <div class="col-lg-2 col-md-6 mb-4 mb-lg-0">
+          <h6 class="text-uppercase font-weight-bold mb-4">Menu</h6>
+          <ul class="list-unstyled mb-0">
+            <li class="mb-2"><a href="coffeemachine.html" class="text-muted">Coffee Machine</a></li>
+            <li class="mb-2"><a href="coffeeproduct.html" class="text-muted">Coffee Product</a></li>
+            <li class="mb-2"><a href="coffeequality.html" class="text-muted">Coffee Quality</a></li>
+          </ul>
+        </div>
+        <div class="col-lg-2 col-md-6 mb-4 mb-lg-0">
+          <h6 class="text-uppercase font-weight-bold mb-4">Content</h6>
+          <ul class="list-unstyled mb-0">
+            <li class="mb-2"><a href="Bs1.html" class="text-muted">Home</a></li>
+            <li class="mb-2"><a href="about.html" class="text-muted">About</a></li>
+            <li class="mb-2"><a href="contact.html" class="text-muted">contact</a></li>
+          </ul>
+        </div>
+        <div class="col-lg-4 col-md-6 mb-lg-0">
+          <h6 class="text-uppercase font-weight-bold mb-4">Newsletter</h6>
+          <p class="text-muted mb-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt</p>
+          <div class="p-1 rounded border">
+            <div class="input-group">
+              <input type="email" placeholder="Enter your email address" aria-describedby="button-addon1" class="form-control border-0 shadow-0">
+              <div class="input-group-append">
+                <button id="button-addon1" type="submit" class="btn btn-link"><i class="fa fa-paper-plane"></i></button>
+              </div>
+            </div>
+          </div>
+        </div>
+	</div>
+    </div>
+    <!-- Copyrights -->
+    <div class="bg-light py-4">
+        <div class="container text-center">
+            <p class="text-muted mb-0 py-2">© 2025 Developed by gain man htyn</p>
+        </div>
+            </div>
+         </footer>
+		<!-- JavaScript to handle cart actions -->
+		<script>
+			const cart = [];
+			const cartCountElement = document.getElementById('cart-count');
+			const cartItemsElement = document.getElementById('cart-items');
+			const cartTotalElement = document.getElementById('cart-total');
+
+			function updateCart() {
+			cartCountElement.textContent = cart.length;
+			cartItemsElement.innerHTML   = '';
+			let total                    = 0;
+			cart.forEach((item, index) => {
+			const li = document.createElement('li');
+			li.classList.add('list-group-item');
+			li.textContent = `${item.name} - $${item.price}`;
+			cartItemsElement.appendChild(li);
+			total += parseFloat(item.price);
+			});
+			cartTotalElement.textContent = total.toFixed(2);
+			}
+
+			document.querySelectorAll('.add-to-cart').forEach(button => {
+			button.addEventListener('click', function () {
+			const name = this.getAttribute('data-name');
+			const price = this.getAttribute('data-price');
+			cart.push({ name, price });
+			updateCart();
+			});
+			});
+	
+			document.getElementById('searchInput').addEventListener('input', function() {
+			const searchValue = this.value.toLowerCase();
+			const cards = document.querySelectorAll('.card');
+
+			cards.forEach(card => {
+			const title = card.querySelector('h5').textContent.toLowerCase();
+			// If there's no description, you can remove the description search part.
+			if (title.includes(searchValue)) {
+            card.style.display = '';
+			} else {
+            card.style.display = 'none';
+			}
+			});
+			});
+		</script>
+    </body>	
+</html>
